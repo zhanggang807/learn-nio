@@ -7,7 +7,7 @@ import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
 
 /**
- * 代码示例 3-8 可能会产生一个文件空洞
+ * 代码示例 3-3 可能会产生一个文件空洞
  * Created by zhanggang3 on 2016/3/15.
  */
 public class FileHole {
