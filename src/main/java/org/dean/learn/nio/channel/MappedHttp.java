@@ -8,6 +8,8 @@ import java.nio.MappedByteBuffer;
 import java.nio.channels.FileChannel;
 
 /**
+ * 代码示例 3-4 使用映射文件和gather写操作来编写HTTP回复
+ *
  * Dummy(虚拟的) HTTP server using MappedByteBuffer
  * Given a filename on the command line, pretend(假装)
  * to be a web server and generate as HTTP response containing
