@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.Random;
 
 /**
+ * 代码示例 3-2
  * 演示使用多个缓冲区聚集后进行写操作
  * 运行完后请查看文件
  * Created by zhanggang3 on 2016/3/15.

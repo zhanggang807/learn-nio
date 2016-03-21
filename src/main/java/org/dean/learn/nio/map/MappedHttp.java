@@ -1,4 +1,4 @@
-package org.dean.learn.nio.channel;
+package org.dean.learn.nio.map;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
