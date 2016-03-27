@@ -53,7 +53,7 @@ public class BufferFillDrain {
         }
         String string = strings[index++];
         for (int i = 0; i < string.length(); i++){
-            buffer.put((char)string.charAt(i));
+            buffer.put(string.charAt(i));
         }
         System.out.println("---- one ----");
         return true;
