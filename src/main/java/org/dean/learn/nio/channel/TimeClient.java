@@ -79,7 +79,9 @@ public class TimeClient {
         // Position to first byte of the low-order 32bits
         longBuffer.position(4);
         // Slice the buffer; gives view of the low-order 32bits
+        System.out.println("longBuffer = " + longBuffer);
         ByteBuffer buffer = longBuffer.slice();
+        System.out.println("buffer = " + buffer);
         int expect = remoteHosts.size();
         int replies = 0;
         System.out.println("");
@@ -87,6 +89,7 @@ public class TimeClient {
         while (true){
             InetSocketAddress sa;
             sa = receivePacket(channel, buffer);
+            System.out.println("buffer = " + buffer);
             buffer.flip();
             replies ++;
             printTime(longBuffer.getLong(0), sa);
@@ -144,6 +147,7 @@ public class TimeClient {
 
     // -------------------------------------------------------------------------------------
     public static void main(String[] args) throws Exception {
+        args = new String[]{"-p", "37", "localhost"};
         TimeClient client = new TimeClient(args);
         client.sendRequests();
         client.getReplies();
