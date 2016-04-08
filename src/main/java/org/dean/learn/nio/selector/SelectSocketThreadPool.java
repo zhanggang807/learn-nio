@@ -41,7 +41,7 @@ public class SelectSocketThreadPool extends SelectSockets{
      *             associated key. The selector will then de-register the channel on
      *             the next select call.
      */
-    protected void readDataFrommSocket(SelectionKey key) throws Exception{
+    protected void readDataFromSocket(SelectionKey key) throws Exception{
         WorkerThread worker = pool.getWorker();
 
         if (worker == null){
