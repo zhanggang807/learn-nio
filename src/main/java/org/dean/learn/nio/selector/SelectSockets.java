@@ -77,7 +77,7 @@ public class SelectSockets {
                 }
 
                 // Remove key from selected set; it's been handled
-                it.remove();
+                it.remove();//这一步很重要啊。文档上讲了。管理选择键的任务交给程序员自己处理了，更灵活。
             }
         }
     }
